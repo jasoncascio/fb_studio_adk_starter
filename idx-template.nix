@@ -6,6 +6,7 @@
   bootstrap = ''
     echo "$WS_NAME"
     cp -rf ${./.}/starter_agent "$WS_NAME"
+    cp ${./requirements.txt} "$WS_NAME"
     chmod -R +w "$WS_NAME"
     mkdir "$WS_NAME"/.idx
     ls -ltra "$WS_NAME"
