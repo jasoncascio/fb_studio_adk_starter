@@ -22,4 +22,4 @@
   '';
 }
 
-googleCloudProjectId=1 googleCloudLocation=2 j2 ./devNix.j2 -o ./dev.nix
+# googleCloudProjectId=1 googleCloudLocation=2 j2 ./devNix.j2 -o ./dev.nix
