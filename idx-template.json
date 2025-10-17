@@ -7,14 +7,14 @@
     {
       "id": "googleCloudProjectId",
       "name": "Google Cloud Project ID",
-      "type": "string",
-      "default": "<your project id>"
+      "type": "text",
+      "default": "your project id"
     },
     {
       "id": "googleCloudLocation",
       "name": "Google Cloud Location",
-      "type": "string",
-      "default": "<your location e.g. us-central1>"
+      "type": "text",
+      "default": "your location e.g. us-central1"
     }
   ]
 }
