@@ -7,6 +7,13 @@
   packages = [
     pkgs.python3
   ];
+
+  env = {
+    GOOGLE_GENAI_USE_VERTEXAI = "TRUE";
+    GOOGLE_CLOUD_PROJECT = "{{ googleCloudProjectId }}";
+    GOOGLE_CLOUD_LOCATION="{{ googleCloudLocation }}";
+  };
+
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
