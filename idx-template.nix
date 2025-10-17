@@ -4,9 +4,11 @@
     pkgs.nixfmt
   ];
   bootstrap = ''
+    echo "$WS_NAME"
     cp -rf ${./.}/starter_agent "$WS_NAME"
     chmod -R +w "$WS_NAME"
     mkdir -p "$WS_NAME"/.idx
+    ls -ltr "$WS_NAME"
     googleCloudProjectId=${googleCloudProjectId} googleCloudLocation=${googleCloudLocation} j2 ${./devNix.j2} -o "$WS_NAME"/.idx/dev.nix
     nixfmt "$WS_NAME"/.idx/dev.nix
     mv "$WS_NAME" "$out"
