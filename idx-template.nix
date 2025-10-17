@@ -9,7 +9,7 @@
     chmod -R +w "$WS_NAME"
     mkdir "$WS_NAME"/.idx
     ls -ltra "$WS_NAME"
-    googleCloudProjectId=${googleCloudProjectId} googleCloudLocation=${googleCloudLocation} j2 ${./devNix.j2} -o "$WS_NAME"/.idx/dev.nix
+    googleCloudProjectId=${googleCloudProjectId} googleCloudLocation=${googleCloudLocation} j2 ./devNix.j2 -o "$WS_NAME"/.idx/dev.nix
     ls -ltra "$WS_NAME"
     nixfmt "$WS_NAME"/.idx/dev.nix
     mv "$WS_NAME" "$out"
@@ -21,3 +21,5 @@
     chmod -R u+w "$out"
   '';
 }
+
+googleCloudProjectId=1 googleCloudLocation=2 j2 ./devNix.j2 -o ./dev.nix
