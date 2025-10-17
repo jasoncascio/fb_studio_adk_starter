@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, googleCloudProjectId, googleCloudLocation, ... }: {
   packages = [
     pkgs.j2cli
     pkgs.nixfmt
