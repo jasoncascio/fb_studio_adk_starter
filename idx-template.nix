@@ -8,7 +8,7 @@
     cp -rf ${./.}/starter_agent "$WS_NAME"
     chmod -R +w "$WS_NAME"
     mkdir "$WS_NAME"/.idx
-    ls -ltr "$WS_NAME"
+    ls -ltra "$WS_NAME"
     googleCloudProjectId=${googleCloudProjectId} googleCloudLocation=${googleCloudLocation} j2 ${./devNix.j2} -o "$WS_NAME"/.idx/dev.nix
     nixfmt "$WS_NAME"/.idx/dev.nix
     mv "$WS_NAME" "$out"
