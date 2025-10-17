@@ -1,0 +1,20 @@
+{
+  "name": "Python ADK",
+  "description": "A simple environment for python ADK agent",
+  "icon": "https://www.gstatic.com/monospace/231115/logo_python.svg",
+  "publisher": "cascio@",
+  "params": [
+    {
+      "id": "googleCloudProjectId",
+      "name": "Google Cloud Project ID",
+      "type": "string",
+      "default": "<your project id>"
+    },
+    {
+      "id": "googleCloudLocation",
+      "name": "Google Cloud Location",
+      "type": "string",
+      "default": "<your location e.g. us-central1>"
+    }
+  ]
+}
