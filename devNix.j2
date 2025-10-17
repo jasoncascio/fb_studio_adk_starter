@@ -31,7 +31,6 @@
         initialize = ''
           source .venv/bin/activate
           echo -e "alias start_dev='adk web --reload_agents'" > /home/user/.bash_aliases
-          echo -e "alias yibyow='echo yibyow!'" >> /home/user/.bash_aliases
           echo -e "alias stop_dev='kill $(lsof -t -i:8000 2>/dev/null)'" >> /home/user/.bash_aliases
           echo -e "alias kill_dev='kill -9 $(lsof -t -i:8000 2>/dev/null)'" >> /home/user/.bash_aliases
         '';
