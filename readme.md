@@ -4,4 +4,4 @@ This is a starter template for a Python environment suitable for developing ADK 
 
 To instantiate this environment, use the following link:
 
-https://idx.google.com/new?template=https://github.com/jasoncascio/firebase_adk_starter
+https://idx.google.com/new?template=https://github.com/jasoncascio/fb_studio_adk_starter

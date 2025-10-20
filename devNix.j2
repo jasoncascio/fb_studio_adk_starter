@@ -31,6 +31,7 @@
         initialize = ''
           source .venv/bin/activate
           echo -e "alias start_dev='adk web --reload_agents'" > /home/user/.bash_aliases
+          . .bash_aliases
         '';
       };
     };
