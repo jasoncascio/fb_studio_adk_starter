@@ -8,13 +8,13 @@
       "id": "googleCloudProjectId",
       "name": "Google Cloud Project ID",
       "type": "text",
-      "default": "your project id"
+      "default": "<your project id>"
     },
     {
       "id": "googleCloudLocation",
       "name": "Google Cloud Location",
       "type": "text",
-      "default": "your location e.g. us-central1"
+      "default": "<your location e.g. us-central1>"
     }
   ]
 }

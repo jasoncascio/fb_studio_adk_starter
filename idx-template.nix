@@ -1,4 +1,4 @@
-{ pkgs, googleCloudProjectId ? "your_project_id" , googleCloudLocation ? "your_location", ... }: {
+{ pkgs, googleCloudProjectId ? "<your_project_id>" , googleCloudLocation ? "<your_location>", ... }: {
   packages = [
     pkgs.j2cli
     pkgs.nixfmt
@@ -8,11 +8,9 @@
     cp -rf ${./.}/starter_agent "$WS_NAME"
     chmod -R +w "$WS_NAME"
     cp ${./requirements.txt} "$WS_NAME"/requirements.txt
-
+    
     mkdir "$WS_NAME"/.idx
-    ls -ltra "$WS_NAME"
     googleCloudProjectId="${googleCloudProjectId}" googleCloudLocation="${googleCloudLocation}" j2 ${./devNix.j2} -o "$WS_NAME"/.idx/dev.nix
-    ls -ltra "$WS_NAME"
     nixfmt "$WS_NAME"/.idx/dev.nix
     mv "$WS_NAME" "$out"
 
