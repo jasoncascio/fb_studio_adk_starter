@@ -6,6 +6,9 @@
   bootstrap = ''
     mkdir "$WS_NAME"
     chmod -R +w "$WS_NAME"
+    mkdir "$WS_NAME"/agents
+    chmod -R +w "$WS_NAME"/agents
+
     cp -rf ${./.}/agents "$WS_NAME"/agents
     cp ${./requirements.txt} "$WS_NAME"/requirements.txt
     cp ${./.gitignore} "$WS_NAME"/.gitignore
