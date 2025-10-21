@@ -6,10 +6,9 @@
   bootstrap = ''
     mkdir "$WS_NAME"
     chmod -R +w "$WS_NAME"
-    mkdir "$WS_NAME"/agents
+    cp -rf ${./.}/agents "$WS_NAME"/agents
     chmod -R +w "$WS_NAME"/agents
 
-    cp -rf ${./.}/agents "$WS_NAME"/agents
     cp ${./requirements.txt} "$WS_NAME"/requirements.txt
     cp ${./.gitignore} "$WS_NAME"/.gitignore
     
@@ -20,8 +19,8 @@
 
     mkdir -p "$out/.idx"
     chmod -R u+w "$out"
-    cp -rf ${./.}/airules.md "$out/.idx/airules.md"
-    cp -rf "$out/.idx/airules.md" "$out/GEMINI.md"
+    cp -f ${./.}/airules.md "$out/.idx/airules.md"
+    cp -f "$out/.idx/airules.md" "$out/GEMINI.md"
     chmod -R u+w "$out"
   '';
 }
