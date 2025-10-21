@@ -4,9 +4,9 @@
     pkgs.nixfmt
   ];
   bootstrap = ''
-    echo "$WS_NAME"
-    cp -rf ${./.}/agents "$WS_NAME"/agents
+    mkdir "$WS_NAME"
     chmod -R +w "$WS_NAME"
+    cp -rf ${./.}/agents "$WS_NAME"/agents
     cp ${./requirements.txt} "$WS_NAME"/requirements.txt
     cp ${./.gitignore} "$WS_NAME"/.gitignore
     
