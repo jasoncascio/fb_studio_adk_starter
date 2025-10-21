@@ -4,7 +4,7 @@ from google.adk.agents import Agent
 from google.genai import types
 
 
-load_dotenv()
+# load_dotenv()
 
 
 MODEL = "gemini-2.0-flash-001"

@@ -5,7 +5,7 @@
   ];
   bootstrap = ''
     echo "$WS_NAME"
-    cp -rf ${./.}/starter_agent "$WS_NAME"
+    cp -rf ${./.}/agents "$WS_NAME"/agents
     chmod -R +w "$WS_NAME"
     cp ${./requirements.txt} "$WS_NAME"/requirements.txt
     cp ${./.gitignore} "$WS_NAME"/.gitignore
